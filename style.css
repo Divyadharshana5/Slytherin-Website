@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    *{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background:  url(background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    height:80px;
+    width: 100%;
+    background: rbga(0,0,0,0,4);
+}
+
+.logo{
+    width: 140px;
+    height: auto;
+    padding: 20px 100px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Roboto', sans-seri;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:  red;
+    border-radius: 2px;
+
+}
+
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.content h1{
+    color:black;
+    font-size: 70px;
+    font-weight: bold;
+    width:950px;
+    text-align: center;
+}
+
+.content p{
+    color:black;
+    font-size: 70px;
+    font-weight: bold;
+    width:500px;
+    text-align: center;
+}
+
+.btn{
+    margin: 100px 200px;
+}
+
+.buttons buttons{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+     font-weight: bold;
+     color:blueviolet;
+     background: red;
+     border: 1px solid #cc0000;
+     outline: none;
+     cursor: pointer;
+     border-radius: 25px;
+     transition: .5s;
+}
+
+.buttons .btn{
+    margin-left: 25px;
+}
+
+.buttons.btn:hover{
+    background: #cc0000;
+}
