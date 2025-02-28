@@ -1,0 +1,9 @@
+/* Apply Background Image to Entire Website */
+body {
+    background: url("src/assets/bg1.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
