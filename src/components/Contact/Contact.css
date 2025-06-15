@@ -1,22 +1,25 @@
-/* Contact.css */
+
 /* Contact Form Container */
 .contact-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Contact Form */
 .contact-form {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0,0.6);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+ 
   width: 100%;
+  align-items: center;
+  justify-content: center;
   max-width: 450px;
   text-align: center;
 }
@@ -26,7 +29,7 @@
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333;
+  color: white;
 }
 
 /* Input & Select Styles */
@@ -38,7 +41,15 @@
   border: 2px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
+   
   transition: 0.3s ease-in-out;
+}
+/* Large default size for the message box */
+.contact-input[type="textarea"],
+.contact-form textarea {
+  min-width: 400px;
+  min-height: 200px;
+  resize: horizontal; /* Allows user to resize if needed (optional) */
 }
 
 /* Input Focus Effect */
@@ -46,6 +57,7 @@
 .contact-select:focus {
   border-color: #22c55e;
   outline: none;
+   
   box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
 }
 
@@ -76,7 +88,7 @@
   padding: 20px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -87,7 +99,7 @@
     transform: scale(0.9);
   }
   to {
-    opacity: 1;
+    opacity: 0;
     transform: scale(1);
   }
 }
@@ -99,3 +111,4 @@
     padding: 20px;
   }
 }
+
