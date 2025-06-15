@@ -4,7 +4,7 @@ import "./About.css";
 const services = [
   {
     title: "Web Development",
-    video: "Web Developer.mp4",
+    video: "/Web developer.mp4",
     description:
       "We create stunning and responsive websites using the latest technologies like React, Next.js, and Tailwind CSS.",
   },
@@ -16,11 +16,13 @@ const services = [
   },
   {
     title: "Full Stack Development",
+    video:"/Full.mp4",
     description:
       "We provide complete end-to-end development solutions, from frontend to backend, ensuring seamless functionality.",
   },
   {
     title: "Software Engineering",
+    video:"/soft.mp4",
     description:
       "Our software engineers develop scalable and robust applications tailored to business needs.",
   },
@@ -57,6 +59,24 @@ export default function About() {
                 <source src={service.video} type="video/mp4" />
               </video>
             )}
+                {/* Show Small Video as an Icon for UI/UX Design */}
+            {service.video && service.title === "Web Development" && (
+              <video className="service-video-icon" autoPlay loop muted>
+                <source src={service.video} type="video/mp4" />
+              </video>
+            )}
+             {/* Show Small Video as an Icon for UI/UX Design */}
+            {service.video && service.title === "Full Stack Development" && (
+              <video className="service-video-icon" autoPlay loop muted>
+                <source src={service.video} type="video/mp4" />
+              </video>
+            )}
+             {/* Show Small Video as an Icon for UI/UX Design */}
+            {service.video && service.title === "Software Engineering" && (
+              <video className="service-video-icon" autoPlay loop muted>
+                <source src={service.video} type="video/mp4" />
+              </video>
+            )}
           </div>
         ))}
       </div>
@@ -73,4 +93,5 @@ export default function About() {
   );
 }
 
+       
        
