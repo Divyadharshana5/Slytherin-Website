@@ -81,7 +81,7 @@
     background: #d1a700;
   }
   .service-video-icon {
-    width: 50px; /* Small icon size */
+    width:50px; /* Small icon size */
     height: 50px;
     border-radius: 8px; /* Rounded corners */
     object-fit: cover;
@@ -89,6 +89,9 @@
     background-color: #1a1a2e; /* Dark Purple (or use #000 for black) */
     padding: 5px; /* Adds spacing around the video */
   }
+  
+  
+  
   
   
   
