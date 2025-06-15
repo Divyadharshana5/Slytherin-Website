@@ -18,7 +18,7 @@ const Hero = () => {
 
           <div className="hero-buttons">
             
-            <a href="#contact" className="cta-button secondary">Get in Touch</a>
+            <a href="/contact" className="cta-button secondary">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -27,3 +27,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
