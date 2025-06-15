@@ -1,94 +1,103 @@
-/* Navbar.css */
 .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   
-  color: yellow;
-  padding: 15px 0;
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  transition: all 0.3s ease-in-out;
+ 
+  
+
+}
+/* Logo anchor */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image */
+.logo-image {
+  height: 100px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Small screen tweak */
+@media (max-width: 600px) {
+  .logo-image {
+    height: 45px;
+  }
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  flex-wrap: wrap;
 }
 
-/* Logo */
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
 
-/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
+  justify-content: center;
+  flex: 1;
 }
 
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
+.nav-links li a {
+  color: #fff;
   text-decoration: none;
-  color: white;
-  font-size: 1rem;
   font-weight: 500;
-  transition: color 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
-  color: #facc15; /* Yellow hover effect */
-}
-
-/* Mobile Menu Icon */
 .menu-icon {
-  
   font-size: 1.8rem;
   cursor: pointer;
+  display: none;
   color: white;
 }
 
-/* Responsive Design */
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffb3;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
     position: absolute;
     top: 60px;
     left: 0;
-    background: rgba(34, 34, 34, 0.9);
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 15px 0;
-    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 1rem 0;
   }
 
   .nav-links.open {
     display: flex;
   }
 
-  .nav-links li {
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
-
   .menu-icon {
     display: block;
+  }
+
+  .social-icons {
+    display: none;
   }
 }
