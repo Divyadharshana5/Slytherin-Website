@@ -1,0 +1,27 @@
+/* Make body & html take full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* Optional: prevents scrollbars */
+}
+
+/* Fullscreen background video */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Put it behind content */
+}
+
+/* Overlay content */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
