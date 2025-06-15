@@ -1,0 +1,191 @@
+/* Teams.css */
+
+.teams-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  /* Solid background for visibility */
+  animation: none;
+}
+
+
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Large Screens - 4 Columns */
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Small Screens - 2 Columns */
+@media (max-width: 1023px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Team Card */
+.team-card {
+  background-color:rgba(0, 0, 0, 0.6); /* Solid card background */
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Hover Effect */
+.team-card:hover {
+  transform: rotateY(10deg) scale(1.07);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.25);
+}
+
+/* Team Image */
+.team-image {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Zoom Effect on Hover */
+.team-card:hover .team-image {
+  transform: scale(1.12);
+}
+
+/* Team Name */
+.team-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change Text Color on Hover */
+.team-card:hover .team-name {
+  color: #1eb980;
+}
+
+/* Team Role */
+.team-role {
+  color: #f7bd2b;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Member Details Layout */
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6); /* Solid background */
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* Image on Left */
+.details-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Details on Right */
+.details-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+}
+
+/* Name */
+.details-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Domain */
+.details-domain {
+  font-size: 1.2rem;
+  color: #1eb980;
+  font-weight: bold;
+}
+
+/* Description */
+.details-info {
+  font-size: 1rem;
+  color: #ddd;
+  max-width: 400px;
+  font-weight: bolder;
+}
+
+/* Additional Information */
+.details-email,
+.details-interests {
+  font-size: 1rem;
+  color: #3ef24d;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Responsive - Stack on Small Screens */
+@media (max-width: 768px) {
+  .details-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .details-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .details-text {
+    align-items: center;
+  }
+}
+
+/* Back Button Style */
+.back {
+  color: red;
+}
+
+.back:hover {
+  color: #e5d312;
+}
