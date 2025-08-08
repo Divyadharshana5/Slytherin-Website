@@ -1,0 +1,274 @@
+/* ================================
+   Base Section
+================================== */
+/* Force the intro section to always center on page */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
+
+
+.projects-section {
+  padding: 3rem 1.5rem;
+  color: #f5f5f5;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================================
+   Header / Introduction
+================================== */
+
+.projects-header,
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-header h2,
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-header p,
+.intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+}
+
+/* ================================
+   Button
+================================== */
+
+.showcase-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.showcase-btn:hover {
+  transform: scale(1.05);
+  background: #0072ff;
+}
+
+/* Alternative style for intro button */
+.intro .showcase-btn {
+  background: linear-gradient(45deg, #ff0099, #6f00ff);
+}
+
+.intro .showcase-btn:hover {
+  background: linear-gradient(45deg, #6f00ff, #ff0099);
+}
+
+/* ================================
+   Cards Grid Layout
+================================== */
+
+.projects-grid,
+.project-cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* ================================
+   Project Cards
+================================== */
+
+.project-card {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-left: 6px solid transparent;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* ================================
+   Card Color Variants
+================================== */
+
+.freelancing-card {
+  border-left-color: #4caf50;
+}
+
+.intern-card {
+  border-left-color: #ff9800;
+}
+
+.upgoing-card {
+  border-left-color: #9c27b0;
+}
+
+/* ================================
+   NEW Badge
+================================== */
+
+.badge-new {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #ff1744;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transform: rotate(5deg);
+  box-shadow: 0 2px 8px rgba(255, 23, 68, 0.3);
+  animation: pulse 2s infinite;
+}
+
+/* ================================
+   Animations
+================================== */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================================
+   Responsive Text Sizes
+================================== */
+
+@media (max-width: 600px) {
+  .projects-header h2,
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .projects-header p,
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+}
+/* ================================
+   Freelancing Sub Projects Grid
+================================== */
+.sub-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sub-project-card {
+  
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.sub-project-card:hover {
+  transform: scale(1.03);
+}
+
+.sub-project-card h4 {
+  font-size: 1.2rem;
+  color: #00c6ff;
+  margin-bottom: 0.5rem;
+}
+
+.sub-project-card p {
+  font-size: 0.95rem;
+  color: #dddddd;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.project-image,
+.project-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+/* Link Button */
+.visit-btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background: #6f00ff;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.visit-btn:hover {
+  background: #a100ff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .sub-project-card h4 {
+    font-size: 1rem;
+  }
+
+  .sub-project-card p {
+    font-size: 0.9rem;
+  }
+}
