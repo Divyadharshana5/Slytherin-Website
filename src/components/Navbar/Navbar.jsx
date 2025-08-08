@@ -15,7 +15,9 @@ const Navbar = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/teams">Teams</a></li>
+          <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
+          
         </ul>
 
         <div className="social-icons">
@@ -30,13 +32,13 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </div>
+       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+  <i className={menuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+</div>
+
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-

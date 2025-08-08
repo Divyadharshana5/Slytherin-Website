@@ -1,103 +1,177 @@
+/* === CSS Variables === */
+:root {
+  --primary: #ff00aa;
+  --text-light: #ffffff;
+  --text-hover: #ffccff;
+  --accent: #ff69b4;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Navbar === */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  
+  background-color: #1a001f;
+  color: var(--text-light);
   position: relative;
   width: 100%;
- 
-  
-
+  z-index: 1000;
+  font-family: var(--font-main);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
 }
-/* Logo anchor */
+
+/* === Logo === */
 .logo-link {
   display: flex;
   align-items: center;
 }
 
-/* Logo image */
 .logo-image {
-  height: 100px;
+  height: 80px;
   width: auto;
-  max-width: 100%;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-/* Small screen tweak */
+.logo-link:hover .logo-image {
+  transform: scale(1.05);
+}
+
 @media (max-width: 600px) {
   .logo-image {
     height: 45px;
   }
 }
 
+/* === Layout Container === */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 1.2rem;
+  position: relative;
 }
 
-
+/* === Nav Links === */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   flex: 1;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a {
-  color: #fff;
+  color: var(--text-light);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
 }
 
+/* === Hover underline === */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus-visible::after {
+  width: 100%;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a:active {
+  color: var(--text-hover);
+}
+
+/* === Ripple Touch Support on Mobile === */
+.nav-links li a:active::after {
+  width: 100%;
+}
+
+/* === Social Icons === */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  transition: all 0.3s ease;
+}
+
+.social-icons a {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+  transform: scale(1.2);
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* === Menu Icon (Mobile) === */
 .menu-icon {
   font-size: 1.8rem;
   cursor: pointer;
   display: none;
-  color: white;
+  color: var(--text-light);
+  z-index: 1001;
+  transition: transform 0.3s ease;
 }
 
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 1rem;
-  margin-right: 1rem;
+.menu-icon:hover {
+  transform: rotate(90deg);
 }
 
-.social-icons a {
-  color: #fff;
-  font-size: 1.4rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #00ffb3;
-}
-
-/* Responsive Styles */
+/* === Responsive Mobile Nav === */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #333;
+    background-color: #4b0e45;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     text-align: center;
     padding: 1rem 0;
+    z-index: 999;
+    transform: translateY(-20%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    border-top: 1px solid #333;
   }
 
   .nav-links.open {
     display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
   }
 
   .menu-icon {
     display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
   }
 
+  /* 🔥 Fix: Force hide social icons properly */
   .social-icons {
-    display: none;
+    display: none !important;
   }
 }
