@@ -1,0 +1,152 @@
+/* Services.css */
+
+.services-section {
+  padding: 60px 20px;
+
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.services-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #a0c4ff;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Updated Grid Layout */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 25px;
+  padding: 0 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .masonry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .masonry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-heading {
+    font-size: 2rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+}
+
+.masonry-card {
+  
+  border-radius: 16px;
+  padding: 25px 20px;
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+ 
+  position: relative;
+  z-index: 1;
+}
+
+.masonry-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.service-icon {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Floating Background Circles */
+.floating {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+.purple {
+  top: -5rem;
+  left: -5rem;
+  background-color: rgba(147, 51, 234, 0.2);
+}
+
+.blue {
+  bottom: -5rem;
+  right: -5rem;
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.delay {
+  animation-delay: 3s;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
