@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Teams.css";
-import { FaGithub, FaLinkedin, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaArrowLeft,
+  FaArrowRight,
+} from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -63,7 +68,7 @@ const teamMembers = [
     image: "/janufa.jpg",
     behance: "https://www.behance.net/janufakarona",
     linkedin: "https://www.linkedin.com/in/janufa-karona-83b9362a1",
-   
+
     description:
       "The CMO manages branding, communications, and marketing campaigns to expand Slytherin’s market presence. They focus on customer engagement, sales growth, and building a strong brand identity.",
   },
@@ -94,7 +99,9 @@ const Teams = () => {
       ripple.className = "ripple-trail";
       ripple.style.left = `${e.clientX - 6}px`;
       ripple.style.top = `${e.clientY - 6}px`;
-      ripple.style.background = `hsl(${Math.floor(Math.random() * 360)}, 100%, 70%)`;
+      ripple.style.background = `hsl(${Math.floor(
+        Math.random() * 360
+      )}, 100%, 70%)`;
       document.body.appendChild(ripple);
       setTimeout(() => ripple.remove(), 600);
     };
@@ -161,7 +168,9 @@ const Teams = () => {
                     onClick={(e) => {
                       const ripple = document.createElement("span");
                       ripple.className = "ripple";
-                      ripple.style.left = `${e.clientX - e.target.offsetLeft}px`;
+                      ripple.style.left = `${
+                        e.clientX - e.target.offsetLeft
+                      }px`;
                       ripple.style.top = `${e.clientY - e.target.offsetTop}px`;
                       e.currentTarget.appendChild(ripple);
                       setTimeout(() => ripple.remove(), 600);
@@ -177,15 +186,27 @@ const Teams = () => {
                     <p className="team-description">{member.description}</p>
                     <div className="team-socials">
                       {member.name === "Janufa Karona" ? (
-                        <a href={member.behance} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={member.behance}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <FaBehance className="social-icon" />
                         </a>
                       ) : (
-                        <a href={member.github} target="_blank" rel="noreferrer">
+                        <a
+                          href={member.github}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <FaGithub className="social-icon" />
                         </a>
                       )}
-                      <a href={member.linkedin} target="_blank" rel="noreferrer">
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <FaLinkedin className="social-icon" />
                       </a>
                     </div>
