@@ -30,7 +30,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/v-ramya-20971b2a0",
     portfolio: "https://ramyav.vercel.app/",
     description:
-      "The CFO of Slytherin Company oversees financial operations, ensuring strong fiscal management and long-term profitability. They lead budgeting, investment strategies, and drive sustainable business growth.",
+      "The CTO of Slytherin Company oversees financial operations, ensuring strong fiscal management and long-term profitability. They lead budgeting, investment strategies, and drive sustainable business growth.",
   },
   {
     name: "Bakyashree",
@@ -50,7 +50,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/anitha-anu-5aa3a3257",
     portfolio: "https://anitha-devportfolio.netlify.app/",
     description:
-      "The CDO of Slytherin Company governs data strategy, ensuring data quality, privacy, and insightful analytics. They turn data into a strategic asset to guide business decisions.",
+      "The CFO of Slytherin Company governs data strategy, ensuring data quality, privacy, and insightful analytics. They turn data into a strategic asset to guide business decisions.",
   },
   {
     name: "Jayasri",
@@ -60,7 +60,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/jayasri-p-ba242a257",
     portfolio: "https://jayasri-dev-portfolio.netlify.app/",
     description:
-      "The CIO manages the IT infrastructure and systems, ensuring technology supports business goals. They drive digital efficiency, cybersecurity, and innovation within the organization.",
+      "The CPO manages the IT infrastructure and systems, ensuring technology supports business goals. They drive digital efficiency, cybersecurity, and innovation within the organization.",
   },
   {
     name: "Janufa Karona",
@@ -80,7 +80,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/jathika-kannan-38a296323",
     portfolio: "https://jathikaportfolio.netlify.app/",
     description:
-      "The CPO leads the product vision, strategy, and development lifecycle at Slytherin Company. They focus on delivering user-centric, innovative solutions aligned with market needs.",
+      "The CIO leads the product vision, strategy, and development lifecycle at Slytherin Company. They focus on delivering user-centric, innovative solutions aligned with market needs.",
   },
 ];
 
