@@ -48,13 +48,6 @@ const Navbar = () => {
           >
             <i className="fab fa-linkedin"></i>
           </a>
-          <a
-            href="https://www.linkedin.com/in/slytherin-private-limited-solution-a40516353"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-youtube"></i>
-          </a>
         </div>
 
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
