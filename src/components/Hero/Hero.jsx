@@ -8,7 +8,9 @@ const Hero = () => {
       ripple.className = "ripple-trail";
       ripple.style.left = `${e.clientX - 6}px`;
       ripple.style.top = `${e.clientY - 6}px`;
-      ripple.style.background = `hsl(${Math.floor(Math.random() * 360)}, 100%, 70%)`;
+      ripple.style.background = `hsl(${Math.floor(
+        Math.random() * 360
+      )}, 100%, 70%)`;
       document.body.appendChild(ripple);
       setTimeout(() => ripple.remove(), 600);
     };
@@ -20,29 +22,52 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-overlay">
-         <div className="floating purple"></div>
-      <div className="floating blue delay"></div>
+        <div className="floating purple"></div>
+        <div className="floating blue delay"></div>
         <div className="hero-container glass">
           <div className="hero-text">
-            <h1 className="main-title fade-in delay-1">Slytherin Private Limited Solutions</h1>
-            <h2 className="subtitle fade-in delay-2">Innovating Digital Excellence</h2>
-            <h3 className="motto fade-in delay-3">⚡ Code Smart. Scale Fast. Lead Boldly.</h3>
+            <h1 className="main-title fade-in delay-1">
+              Slytherin Private Limited Solutions
+            </h1>
+            <h2 className="subtitle fade-in delay-2">
+              Innovating Digital Excellence
+            </h2>
+            <h3 className="motto fade-in delay-3">
+              ⚡ Code Smart. Scale Fast. Lead Boldly.
+            </h3>
             <p className="description fade-in delay-4">
-              At <span className="highlight">Slytherin Pvt. Ltd.</span>, we empower businesses and individuals<br />
-              with <span className="highlight">cutting-edge technology</span> solutions tailored for tomorrow.<br />
-              Whether you're a startup, enterprise, or creator,<br />
-              we help you <span className="highlight">transform ideas into impact</span>—seamlessly.
+              At <span className="highlight">Slytherin Pvt. Ltd.</span>, we
+              empower businesses and individuals
+              <br />
+              with <span className="highlight">
+                cutting-edge technology
+              </span>{" "}
+              solutions tailored for tomorrow.
+              <br />
+              Whether you're a startup, enterprise, or creator,
+              <br />
+              we help you{" "}
+              <span className="highlight">transform ideas into impact</span>
+              —seamlessly.
             </p>
             <div className="hero-buttons fade-in delay-5">
-              <a href="/projects" className="cta-button project-button">Explore Projects</a>
-              <a href="/contact" className="cta-button">Get in Touch</a>
+              <a href="/projects" className="cta-button project-button">
+                Explore Projects
+              </a>
+              <a href="/contact" className="cta-button">
+                Get in Touch
+              </a>
             </div>
           </div>
-           <div className="hero-image fade-in delay-5">
+          <div className="hero-image fade-in delay-5">
             <div className="logo-frame">
-              <img src="/slytherin-remove.png" alt="Slytherin Logo" className="logo-img" />
+              <img
+                src="/slytherin-remove.png"
+                alt="Slytherin Logo"
+                className="logo-img"
+              />
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </section>
