@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Teams from "./components/Teams/Teams";
-import Services from "./components/Services/Services";
+import Services from "./components/ Services/Services";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 
