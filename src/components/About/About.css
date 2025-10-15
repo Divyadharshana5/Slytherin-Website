@@ -1,94 +1,188 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ripple Trail */
+.ripple-trail {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.7;
+  animation: ripple-fade 0.6s ease-out;
+  z-index: 9999;
+}
+
+@keyframes ripple-fade {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+/* Floating Background Circles */
+.floating {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+ 
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}.purple {
+  top: -5rem;
+  left: -5rem;
+  background-color: rgba(147, 51, 234, 0.2);
+}
+
+.blue {
+  bottom: -5rem;
+  right: -5rem;
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.delay {
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+/* Main Section */
 .about-section {
-    padding: 50px;
-    
-    text-align: center;
-    color: white;
+  
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title & Tagline */
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #00ffd1;
+}
+
+.about-tagline {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Info Box */
+.about-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
+}
+
+.about-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #00ffd1;
+}
+
+.about-box p,
+.about-box ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+.about-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box ul li {
+  margin-bottom: 10px;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+
+.about-box ul li::before {
+  content: "• ";
+  color: #00ffd1;
+}
+
+/* Footer */
+.about-footer {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #b3ffec;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
   }
-  
-  .company-info {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
+
+  .about-tagline {
+    font-size: 1.1rem;
   }
-  
-  .company-info h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on tablets */
   }
-  
-  .company-info p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+
+  .about-box h2 {
+    font-size: 1.3rem;
   }
-  
-  /* Services Grid */
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-    padding: 20px;
+
+  .about-footer {
+    font-size: 1rem;
   }
-  
-  .service-card {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 540px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
   }
-  
-  .service-card h3 {
-    font-size: 1.5rem;
-    color: #facc15;
+
+  .about-title {
+    font-size: 1.8rem;
   }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-    background: rgba(0, 0, 0, 0.8);
+
+  .about-tagline {
+    font-size: 1rem;
   }
-  
-  /* Service Details */
-  .service-details {
-    margin-top: 30px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .service-details h3 {
-    font-size: 2rem;
-    color: #facc15;
-  }
-  
-  .service-details p {
-    font-size: 1.2rem;
-  }
-  
-  .service-details button {
-    background: #facc15;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .service-details button:hover {
-    background: #d1a700;
-  }
-  .service-video-icon {
-    width: 50px; /* Small icon size */
-    height: 50px;
-    border-radius: 8px; /* Rounded corners */
-    object-fit: cover;
-    margin-top: 5px;
-    background-color: #1a1a2e; /* Dark Purple (or use #000 for black) */
-    padding: 5px; /* Adds spacing around the video */
-  }
-  
-  
-  
+}

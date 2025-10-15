@@ -1,28 +1,34 @@
 import React from "react";
-import Contact from "./components/Contact/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
-import Achievement from "./components/Achievement/Achievement";
-import "./App.css";
+import Teams from "./components/Teams/Teams";
+import Services from "./components/Services/Services";
+import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
 
-const App = () => {
+import './App.css'
+
+const App=()=>{
   return (
-    <div>
-      <Navbar />
-
-      <section id="hero" style={{}}></section>
-      <Hero />
-
-      <section id="about" style={{}}></section>
-      <About />
-      <section id="teams" style={{}}></section>
-      <section id="achievements" style={{}}></section>
-      <section id="projects" style={{}}></section>
-      <section id="contact" style={{}}>
-        <Contact />
-      </section>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/teams" element={<Teams />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            
+          </Routes>
+        </div>
+       
+      </Router>
+    </>
   );
 };
 
