@@ -42,7 +42,7 @@ const Navbar = () => {
             <i className="fab fa-github"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/slytherin-private-limited-solution-a40516353"
+            href="linkedin.com/in/slytherin-private-solution-limited-a40516353"
             target="_blank"
             rel="noopener noreferrer"
           >
