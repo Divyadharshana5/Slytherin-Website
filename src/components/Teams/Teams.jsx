@@ -24,7 +24,7 @@ const teamMembers = [
   },
   {
     name: "Ramya",
-    position: "Chief Financial Officer (CFO)",
+    position: "Chief Technical Officer (CTO)",
     image: "/ramya.jpg",
     github: "https://github.com/Ramya3106",
     linkedin: "https://www.linkedin.com/in/v-ramya-20971b2a0",
@@ -44,7 +44,7 @@ const teamMembers = [
   },
   {
     name: "Anitha",
-    position: "Chief Data Officer (CDO)",
+    position: "Chief Financial Officer (CFO)",
     image: "/anitha.jpg",
     github: "https://github.com/Anithanu1",
     linkedin: "https://www.linkedin.com/in/anitha-anu-5aa3a3257",
