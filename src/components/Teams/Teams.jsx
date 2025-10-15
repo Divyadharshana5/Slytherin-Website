@@ -1,3 +1,6 @@
+import react from "react";
+import "./Navbar.css";
+
 import {
   BrowserRouter as Router,
   Route,
