@@ -54,7 +54,7 @@ const teamMembers = [
   },
   {
     name: "Jayasri",
-    position: "Chief Information Officer (CIO)",
+    position: "Chief Product Officer (CPO)",
     image: "/jai.jpg",
     github: "https://github.com/Jayasri9786",
     linkedin: "https://www.linkedin.com/in/jayasri-p-ba242a257",
@@ -74,7 +74,7 @@ const teamMembers = [
   },
   {
     name: "Jathika",
-    position: "Chief Product Officer (CPO)",
+    position: "Chief Information Officer (CFO)",
     image: "/jathima.jpg",
     github: "https://github.com/Jathika",
     linkedin: "https://www.linkedin.com/in/jathika-kannan-38a296323",
