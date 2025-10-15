@@ -8,9 +8,9 @@ import Services from "./components/ Services/Services";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 
-import './App.css'
+import "./App.css";
 
-const App=()=>{
+const App = () => {
   return (
     <>
       <Router>
@@ -23,10 +23,8 @@ const App=()=>{
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
-            
           </Routes>
         </div>
-       
       </Router>
     </>
   );
