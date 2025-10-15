@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Teams from "./components/Teams/Teams";
 import Services from "./components/ Services/Services";
 import Contact from "./components/Contact/Contact";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Project/Projects";
 
 import "./App.css";
 
