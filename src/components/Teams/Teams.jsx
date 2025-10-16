@@ -104,7 +104,7 @@ const members = [
   {
     name: "Allwyn",
     position: "Backend Developer",
-    image: "/dharsha.jpg",
+    image: "/.jpg",
     github: "https://github.com/allwyn",
     linkedin: "https://linkedin.com/in/allwyn",
     portfolio: "https://allwyn.portfolio.com",
@@ -112,7 +112,7 @@ const members = [
   {
     name: "Dilli Basker",
     position: "Backend Developer",
-    image: "/ramya.jpg",
+    image: "/.jpg",
     github: "https://github.com/dillibasker",
     linkedin: "https://linkedin.com/in/dillibasker",
     portfolio: "https://dillibasker.portfolio.com",
@@ -120,7 +120,7 @@ const members = [
   {
     name: "Premavathy",
     position: "Frontend Developer",
-    image: "/baks.jpg",
+    image: "/.jpg",
     github: "https://github.com/premavathy",
     linkedin: "https://linkedin.com/in/premavathy",
     portfolio: "https://premavathy.portfolio.com",
@@ -128,7 +128,7 @@ const members = [
   {
     name: "",
     position: "Frontend Developer",
-    image: "/anitha.jpg",
+    image: "/.jpg",
     github: "https://github.com/meenakshi",
     linkedin: "https://linkedin.com/in/meenakshi",
     portfolio: "https://meenakshi.portfolio.com",
@@ -136,7 +136,7 @@ const members = [
   {
     name: "Udaya Bhanu",
     position: "Mobile Developer",
-    image: "/jai.jpg",
+    image: "/.jpg",
     github: "https://github.com/udayabhanu",
     linkedin: "https://linkedin.com/in/udayabhanu",
     portfolio: "https://udayabhanu.portfolio.com",
@@ -144,7 +144,7 @@ const members = [
   {
     name: "Thejashwini",
     position: "UI/UX Designer",
-    image: "/janufa.jpg",
+    image: "/.jpg",
     github: "https://github.com/thejashwini",
     linkedin: "https://linkedin.com/in/thejashwini",
     portfolio: "https://thejashwini.portfolio.com",
@@ -152,7 +152,7 @@ const members = [
   {
     name: "Silambarasan",
     position: "UI/UX Designer",
-    image: "/jathima.jpg",
+    image: "/.jpg",
     github: "https://github.com/silambarasan",
     linkedin: "https://linkedin.com/in/silambarasan",
     portfolio: "https://silambarasan.portfolio.com",
@@ -160,7 +160,7 @@ const members = [
   {
     name: "Shadrach Benzamin",
     position: "Content Writer",
-    image: "/jan.jpg",
+    image: "/.jpg",
     github: "https://github.com/shadrachbenzamin",
     linkedin: "https://linkedin.com/in/shadrachbenzamin",
     portfolio: "https://shadrachbenzamin.portfolio.com",
