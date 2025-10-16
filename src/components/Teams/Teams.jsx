@@ -110,8 +110,8 @@ const members = [
     portfolio: "https://member3.portfolio.com",
   },
   {
-    name: "",
-    position: "Web Developer",
+    name: "Dilli Basker",
+    position: "Backend Developer",
     image: "/member4.jpg",
     github: "https://github.com/member4",
     linkedin: "https://linkedin.com/in/member4",
