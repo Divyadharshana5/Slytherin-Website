@@ -88,7 +88,7 @@ const members = [
   {
     name: "Jai Ganesh",
     position: "Technical Head",
-    image: "/member1.jpg",
+    image: "/ganesh.jpg",
     github: "https://github.com/member1",
     linkedin: "https://linkedin.com/in/member1",
     portfolio: "https://member1.portfolio.com",
@@ -96,7 +96,7 @@ const members = [
   {
     name: "M.Mohammed Aashiq",
     position: "Marketing Manager",
-    image: "/member2.jpg",
+    image: "/aashiq.jpg",
     github: "https://github.com/MOHAMMED-AASHIQ-124",
     linkedin: "https://www.linkedin.com/in/mohammed-aashiq-6b339b2a6/",
     portfolio: "https://mohammed-aashiq-0727.netlify.app/ ",
