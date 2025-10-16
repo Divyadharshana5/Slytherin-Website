@@ -127,7 +127,7 @@ const members = [
     portfolio: "premavathy-portfolio.vercel.app",
   },
   {
-    name: "",
+    name: "Keerthana",
     position: "Frontend Developer",
     image: "/.jpg",
     github: "",
@@ -161,8 +161,8 @@ const members = [
   {
     name: "Shadrach Benzamin",
     position: "Content Writer",
-    image: "/.jpg",
-    github: "",
+    image: "/benzamin.jpg",
+    github: "https://github.com/shadrach-sb",
     linkedin: "",
     portfolio: "",
   },
