@@ -99,7 +99,7 @@ const members = [
     image: "/member2.jpg",
     github: "https://github.com/MOHAMMED-AASHIQ-124",
     linkedin: "https://www.linkedin.com/in/mohammed-aashiq-6b339b2a6/",
-    portfolio: "https://member2.portfolio.com",
+    portfolio: "https://mohammed-aashiq-0727.netlify.app/ ",
   },
   {
     name: "Allwyn",
