@@ -120,7 +120,7 @@ const members = [
   {
     name: "Premavathy",
     position: "Frontend Developer",
-    image: "/.jpg",
+    image: "/prema.jpg",
     github: "https://github.com/PremavathyV",
     linkedin:
       "https://www.linkedin.com/in/premavathy-vijayan-921a39252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -137,7 +137,7 @@ const members = [
   {
     name: "Udaya Bhanu",
     position: "Mobile Developer",
-    image: "/.jpg",
+    image: "/bhanu.jpg",
     github: "",
     linkedin: "",
     portfolio: "",
@@ -145,7 +145,7 @@ const members = [
   {
     name: "Thejashwini",
     position: "UI/UX Designer",
-    image: "/.jpg",
+    image: "/thej.jpg",
     github: "https://github.com/thej1812 ",
     linkedin: "https://www.linkedin.com/in/thejashwini-d/ ",
     behance: "https://www.behance.net/thejashwini-d/ ",
