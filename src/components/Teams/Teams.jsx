@@ -13,7 +13,7 @@ import { FaBehance } from "react-icons/fa";
 
 const teamMembers = [
   {
-    name: "Divya Dharshana",
+    name: "Divyadharshana",
     position: "Chief Executive Officer (CEO)",
     image: "/dharsha.jpg",
     github: "https://github.com/Divyadharshana5/",
