@@ -146,9 +146,9 @@ const members = [
     name: "Thejashwini",
     position: "UI/UX Designer",
     image: "/.jpg",
-    github: "",
-    linkedin: "",
-    portfolio: "",
+    github: "https://github.com/thej1812 ",
+    linkedin: "https://www.linkedin.com/in/thejashwini-d/ ",
+    behance: "https://www.behance.net/thejashwini-d/ ",
   },
   {
     name: "Silambarasan",
