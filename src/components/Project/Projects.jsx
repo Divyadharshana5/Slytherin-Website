@@ -1,16 +1,17 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Projects.css";
 
 const Projects = () => {
-  
   const [showProjects, setShowProjects] = useState(false);
-useEffect(() => {
+  useEffect(() => {
     const createTrail = (e) => {
       const ripple = document.createElement("div");
       ripple.className = "ripple-trail";
       ripple.style.left = `${e.clientX - 6}px`;
       ripple.style.top = `${e.clientY - 6}px`;
-      ripple.style.background = `hsl(${Math.floor(Math.random() * 360)}, 100%, 70%)`;
+      ripple.style.background = `hsl(${Math.floor(
+        Math.random() * 360
+      )}, 100%, 70%)`;
       document.body.appendChild(ripple);
       setTimeout(() => ripple.remove(), 600);
     };
@@ -63,10 +64,14 @@ useEffect(() => {
               {/* Card 2 */}
               <div className="sub-project-card">
                 <h4>Travel Website</h4>
-                <img src="travel.png" alt="Travel Website" className="project-video" />
+                <img
+                  src="travel.jpg"
+                  alt="Travel Website"
+                  className="project-video"
+                />
                 <p>
-                  Developed a custom Travelling website ,which is enclosed with animative, 
-                  styling and  with interactive actions 
+                  Developed a custom Travelling website ,which is enclosed with
+                  animative, styling and with interactive actions
                 </p>
                 <a
                   href="https://travelwebsite-divya.vercel.app/"
@@ -74,7 +79,7 @@ useEffect(() => {
                   rel="noopener noreferrer"
                   className="visit-btn"
                 >
-                  View 
+                  View
                 </a>
               </div>
 
@@ -82,13 +87,14 @@ useEffect(() => {
               <div className="sub-project-card">
                 <h4>Icecream -shop</h4>
                 <img
-                  src="ice.jpg"
+                  src="icecream.jpg"
                   alt="AI Chatbot"
                   className="project-image"
                 />
                 <p>
-                  Created an website which is mostly liked by childrens from adults ,
-                  you can visit my project and have glance of how it interacts with you
+                  Created an website which is mostly liked by childrens from
+                  adults , you can visit my project and have glance of how it
+                  interacts with you
                 </p>
                 <a
                   href="https://travel-and-tour-website-2t1z.vercel.app/"
@@ -110,12 +116,13 @@ useEffect(() => {
               <div className="sub-project-card">
                 <h4>React Dashboard</h4>
                 <img
-                  src="land.jpg"
+                  src="react-dashboard.jpg"
                   alt="React Dashboard"
                   className="project-image"
                 />
                 <p>
-                  Interns built an  dashboard with React, contacts ,admins and authenticity
+                  Interns built an dashboard with React, contacts ,admins and
+                  authenticity
                 </p>
                 <a
                   href="https://basicreact-landingpage.netlify.app/"
@@ -130,13 +137,10 @@ useEffect(() => {
               {/* Intern Project 2 */}
               <div className="sub-project-card">
                 <h4>Data Science</h4>
-                <img
-                  src="data.jpg"
-                  controls
-                  className="project-video"
-                />
+                <img src="datascience.jpg" controls className="project-video" />
                 <p>
-                 Data science analystic were made with intern choice of project decision 
+                  Data science analystic were made with intern choice of project
+                  decision
                 </p>
                 <a
                   href="data.mp4"
@@ -157,7 +161,9 @@ useEffect(() => {
                   className="project-image"
                 />
                 <p>
-                  Developed an Resume generator tool using frontend frameworks and languages ,which undergoes authenticity and intergrity of multiple registerations
+                  Developed an Resume generator tool using frontend frameworks
+                  and languages ,which undergoes authenticity and intergrity of
+                  multiple registerations
                 </p>
                 <a
                   href="https://registration-a8xak8x75-jananis-projects-d939603d.vercel.app/"
@@ -176,9 +182,11 @@ useEffect(() => {
             <span className="badge-new">NEW</span>
             <h3>Upgoing Project: AgriConnect</h3>
             <p>
-              <strong>AgriConnect</strong> is our latest R&D initiative designed to bridge the gap
-              between <strong>farmers and customers</strong>. The platform ensures direct delivery of fresh produce.
-              A third party "Hub" steps in to assist when farmers can't fulfill customer orders.
+              <strong>AgriConnect</strong> is our latest R&D initiative designed
+              to bridge the gap between <strong>farmers and customers</strong>.
+              The platform ensures direct delivery of fresh produce. A third
+              party "Hub" steps in to assist when farmers can't fulfill customer
+              orders.
             </p>
 
             <div className="sub-projects-grid">
@@ -191,7 +199,9 @@ useEffect(() => {
                   className="project-image"
                 />
                 <p>
-                  High-fidelity design for the AgriConnect website showcasing product listings, farmer dashboards, and real-time availability.
+                  High-fidelity design for the AgriConnect website showcasing
+                  product listings, farmer dashboards, and real-time
+                  availability.
                 </p>
               </div>
 
@@ -204,7 +214,8 @@ useEffect(() => {
                   className="project-image"
                 />
                 <p>
-                  Detailed PPT explaining objectives, user roles, workflow, and future roadmap of the AgriConnect system.
+                  Detailed PPT explaining objectives, user roles, workflow, and
+                  future roadmap of the AgriConnect system.
                 </p>
                 <a
                   href="/ppt for agriculture.pdf"
@@ -225,7 +236,8 @@ useEffect(() => {
                   className="project-image"
                 />
                 <p>
-                  The app version of AgriConnect is under final testing and will be available soon on Android & iOS platforms.
+                  The app version of AgriConnect is under final testing and will
+                  be available soon on Android & iOS platforms.
                 </p>
               </div>
             </div>
