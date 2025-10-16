@@ -84,6 +84,89 @@ const teamMembers = [
   },
 ];
 
+const members = [
+  {
+    name: "",
+    position: "Full Stack Developer",
+    image: "/member1.jpg",
+    github: "https://github.com/member1",
+    linkedin: "https://linkedin.com/in/member1",
+    portfolio: "https://member1.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Full Stack Developer",
+    image: "/member2.jpg",
+    github: "https://github.com/member2",
+    linkedin: "https://linkedin.com/in/member2",
+    portfolio: "https://member2.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Blockchain Developer",
+    image: "/member3.jpg",
+    github: "https://github.com/member3",
+    linkedin: "https://linkedin.com/in/member3",
+    portfolio: "https://member3.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Web Developer",
+    image: "/member4.jpg",
+    github: "https://github.com/member4",
+    linkedin: "https://linkedin.com/in/member4",
+    portfolio: "https://member4.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Frontend Developer",
+    image: "/member5.jpg",
+    github: "https://github.com/member5",
+    linkedin: "https://linkedin.com/in/member5",
+    portfolio: "https://member5.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Backend Developer",
+    image: "/member6.jpg",
+    github: "https://github.com/member6",
+    linkedin: "https://linkedin.com/in/member6",
+    portfolio: "https://member6.portfolio.com",
+  },
+  {
+    name: "",
+    position: "UI/UX Designer",
+    image: "/member7.jpg",
+    github: "https://github.com/member7",
+    linkedin: "https://linkedin.com/in/member7",
+    portfolio: "https://member7.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Mobile Developer",
+    image: "/member8.jpg",
+    github: "https://github.com/member8",
+    linkedin: "https://linkedin.com/in/member8",
+    portfolio: "https://member8.portfolio.com",
+  },
+  {
+    name: "",
+    position: "DevOps Engineer",
+    image: "/member9.jpg",
+    github: "https://github.com/member9",
+    linkedin: "https://linkedin.com/in/member9",
+    portfolio: "https://member9.portfolio.com",
+  },
+  {
+    name: "",
+    position: "Data Scientist",
+    image: "/member10.jpg",
+    github: "https://github.com/member10",
+    linkedin: "https://linkedin.com/in/member10",
+    portfolio: "https://member10.portfolio.com",
+  },
+];
+
 const chunkArray = (arr, size) => {
   const res = [];
   for (let i = 0; i < arr.length; i += size) {
@@ -218,6 +301,56 @@ const Teams = () => {
                     </button>
                   </div>
                 ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Members Section */}
+      <div className="members-section">
+        <h2 className="members-heading">Members</h2>
+        <div className="members-grid">
+          {members.map((member, index) => (
+            <div
+              key={index}
+              className="member-card"
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
+            >
+              <div
+                className="member-image"
+                style={{ backgroundImage: `url(${member.image})` }}
+              ></div>
+              <div className="member-info">
+                <h3 className="member-name">{member.name}</h3>
+                <p className="member-position">{member.position}</p>
+                <div className="member-socials">
+                  <a
+                    href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="GitHub"
+                  >
+                    <FaGithub className="member-social-icon" />
+                  </a>
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="LinkedIn"
+                  >
+                    <FaLinkedin className="member-social-icon" />
+                  </a>
+                  <a
+                    href={member.portfolio}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Portfolio"
+                  >
+                    <i className="fas fa-globe member-social-icon"></i>
+                  </a>
+                </div>
               </div>
             </div>
           ))}
