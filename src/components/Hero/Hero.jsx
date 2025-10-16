@@ -62,7 +62,7 @@ const Hero = () => {
           <div className="hero-image fade-in delay-5">
             <div className="logo-frame">
               <img
-                src="/slytherin-remove.png"
+                src="/Slytherin.jpg"
                 alt="Slytherin Logo"
                 className="logo-img"
               />
