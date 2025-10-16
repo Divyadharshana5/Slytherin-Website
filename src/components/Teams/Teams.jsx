@@ -138,9 +138,9 @@ const members = [
     name: "Udaya Bhanu",
     position: "Mobile Developer",
     image: "/bhanu.jpg",
-    github: "",
-    linkedin: "",
-    portfolio: "",
+    github: "https://github.com/bhanu-3333",
+    linkedin: "https://www.linkedin.com/in/udaya-bhanu-s-3003972a6/",
+    portfolio: "https://portfolio-hw8i.vercel.app/ ",
   },
   {
     name: "Thejashwini",
