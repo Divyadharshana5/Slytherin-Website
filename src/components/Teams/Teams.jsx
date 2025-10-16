@@ -163,8 +163,9 @@ const members = [
     position: "Content Writer",
     image: "/benzamin.jpg",
     github: "https://github.com/shadrach-sb",
-    linkedin: "",
-    portfolio: "",
+    linkedin:
+      "https://www.linkedin.com/in/shadrach-s-b-033936378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    portfolio: "https://www.behance.net/shadracbenzami",
   },
 ];
 
