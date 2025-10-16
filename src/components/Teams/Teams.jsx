@@ -86,16 +86,16 @@ const teamMembers = [
 
 const members = [
   {
-    name: "",
-    position: "Full Stack Developer",
+    name: "Jai Ganesh",
+    position: "Technical Head",
     image: "/member1.jpg",
     github: "https://github.com/member1",
     linkedin: "https://linkedin.com/in/member1",
     portfolio: "https://member1.portfolio.com",
   },
   {
-    name: "",
-    position: "Full Stack Developer",
+    name: "M.Mohammed Aashiq",
+    position: "Marketing Manager",
     image: "/member2.jpg",
     github: "https://github.com/member2",
     linkedin: "https://linkedin.com/in/member2",
