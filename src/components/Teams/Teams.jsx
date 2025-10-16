@@ -97,8 +97,8 @@ const members = [
     name: "M.Mohammed Aashiq",
     position: "Marketing Manager",
     image: "/member2.jpg",
-    github: "https://github.com/member2",
-    linkedin: "https://linkedin.com/in/member2",
+    github: "https://github.com/MOHAMMED-AASHIQ-124",
+    linkedin: "https://www.linkedin.com/in/mohammed-aashiq-6b339b2a6/",
     portfolio: "https://member2.portfolio.com",
   },
   {
