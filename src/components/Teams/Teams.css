@@ -31,13 +31,17 @@ html {
   color: white;
   min-height: 100vh;
   width: 100vw;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
   padding: 0;
-  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+  background: radial-gradient(
+    circle at center,
+    rgba(59, 130, 246, 0.05) 0%,
+    transparent 70%
+  );
   box-shadow: inset 0 0 50px rgba(59, 130, 246, 0.15);
 }
 
@@ -47,6 +51,7 @@ html {
   font-weight: bold;
   background: linear-gradient(to right, #34d399, #3b82f6);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
   margin: 24px 0;
@@ -331,8 +336,158 @@ html {
   touch-action: pan-y;
 }
 
+/* Members Section */
+.members-section {
+  width: 100%;
+  padding: 60px 20px;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5px);
+}
+
+.members-heading {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: bold;
+  background: linear-gradient(to right, #34d399, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.member-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 255, 100, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.member-image {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-image {
+  transform: scale(1.05);
+}
+
+.member-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.member-position {
+  font-size: 0.9rem;
+  color: #34d399;
+  margin-bottom: 15px;
+}
+
+.member-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.member-social-icon {
+  font-size: 1.3rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.member-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.member-socials a:hover {
+  background: #34d399;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.member-socials a:hover .member-social-icon {
+  color: #0f172a;
+}
+
 /* Face-focused positions for each individual in small screens */
 @media (max-width: 480px) {
+  .members-section {
+    padding: 40px 10px;
+  }
+
+  .members-heading {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .member-image {
+    height: 220px;
+  }
+
+  .member-info {
+    padding: 15px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-position {
+    font-size: 0.85rem;
+  }
+
+  .member-social-icon {
+    font-size: 1.1rem;
+  }
+
+  .member-socials a {
+    width: 32px;
+    height: 32px;
+  }
+
   /* Default face focus */
   .team-image {
     background-position: center top;
