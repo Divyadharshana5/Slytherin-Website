@@ -104,7 +104,7 @@ const members = [
   {
     name: "Allwyn",
     position: "Backend Developer",
-    image: "/member3.jpg",
+    image: "/.jpg",
     github: "https://github.com/member3",
     linkedin: "https://linkedin.com/in/member3",
     portfolio: "https://member3.portfolio.com",
@@ -112,7 +112,7 @@ const members = [
   {
     name: "Dilli Basker",
     position: "Backend Developer",
-    image: "/member4.jpg",
+    image: "/.jpg",
     github: "https://github.com/member4",
     linkedin: "https://linkedin.com/in/member4",
     portfolio: "https://member4.portfolio.com",
@@ -120,7 +120,7 @@ const members = [
   {
     name: "Premavathy",
     position: "Frontend Developer",
-    image: "/member5.jpg",
+    image: "/.jpg",
     github: "https://github.com/member5",
     linkedin: "https://linkedin.com/in/member5",
     portfolio: "https://member5.portfolio.com",
@@ -128,7 +128,7 @@ const members = [
   {
     name: "",
     position: "Frontend Developer",
-    image: "/member6.jpg",
+    image: "/.jpg",
     github: "https://github.com/member6",
     linkedin: "https://linkedin.com/in/member6",
     portfolio: "https://member6.portfolio.com",
@@ -136,7 +136,7 @@ const members = [
   {
     name: "Udaya Bhanu",
     position: "Mobile Developer",
-    image: "/member7.jpg",
+    image: "/.jpg",
     github: "https://github.com/member7",
     linkedin: "https://linkedin.com/in/member7",
     portfolio: "https://member7.portfolio.com",
@@ -144,7 +144,7 @@ const members = [
   {
     name: "Thejashwini",
     position: "UI/UX Designer",
-    image: "/member8.jpg",
+    image: "/.jpg",
     github: "https://github.com/member8",
     linkedin: "https://linkedin.com/in/member8",
     portfolio: "https://member8.portfolio.com",
@@ -152,7 +152,7 @@ const members = [
   {
     name: "Silambarasan",
     position: "UI/UX Designer",
-    image: "/member9.jpg",
+    image: "/.jpg",
     github: "https://github.com/member9",
     linkedin: "https://linkedin.com/in/member9",
     portfolio: "https://member9.portfolio.com",
@@ -160,7 +160,7 @@ const members = [
   {
     name: "Shadrach Benzamin",
     position: "Content Writer",
-    image: "/member10.jpg",
+    image: "/.jpg",
     github: "https://github.com/member10",
     linkedin: "https://linkedin.com/in/member10",
     portfolio: "https://member10.portfolio.com",
