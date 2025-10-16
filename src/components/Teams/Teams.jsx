@@ -121,8 +121,9 @@ const members = [
     name: "Premavathy",
     position: "Frontend Developer",
     image: "/.jpg",
-    github: "",
-    linkedin: "",
+    github: "https://github.com/PremavathyV",
+    linkedin:
+      "https://www.linkedin.com/in/premavathy-vijayan-921a39252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     portfolio: "",
   },
   {
