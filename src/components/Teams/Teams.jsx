@@ -156,7 +156,8 @@ const members = [
     position: "UI/UX Designer",
     image: "/.jpg",
     github: "https://github.com/ashoklap1212-code",
-    linkedin: "",
+    linkedin:
+      "https://www.linkedin.com/in/silambarasan-m-b1046a320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
     portfolio: "",
   },
   {
