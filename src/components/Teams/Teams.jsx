@@ -155,7 +155,7 @@ const members = [
     name: "Silambarasan",
     position: "UI/UX Designer",
     image: "/.jpg",
-    github: "",
+    github: "https://github.com/ashoklap1212-code",
     linkedin: "",
     portfolio: "",
   },
