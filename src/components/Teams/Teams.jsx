@@ -113,7 +113,7 @@ const members = [
     name: "Dilli Basker",
     position: "Backend Developer",
     image: "/.jpg",
-    github: "",
+    github: "https://github.com/dillibasker",
     linkedin: "",
     portfolio: "",
   },
@@ -130,9 +130,10 @@ const members = [
     name: "Keerthana",
     position: "Frontend Developer",
     image: "/.jpg",
-    github: "",
-    linkedin: "",
-    portfolio: "",
+    github: "https://github.com/keerthanaa18",
+    linkedin:
+      "https://www.linkedin.com/in/keerthana-keerthana-476886323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    portfolio: "https://keerthana-awesome-work.lovable.app/",
   },
   {
     name: "Udaya Bhanu",
