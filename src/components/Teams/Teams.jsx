@@ -154,7 +154,7 @@ const members = [
   {
     name: "Silambarasan",
     position: "UI/UX Designer",
-    image: "/.jpg",
+    image: "/silambarasam.jpg",
     github: "https://github.com/ashoklap1212-code",
     linkedin:
       "https://www.linkedin.com/in/silambarasan-m-b1046a320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
