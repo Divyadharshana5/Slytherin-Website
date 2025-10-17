@@ -114,8 +114,8 @@ const members = [
     position: "Backend Developer",
     image: "/.jpg",
     github: "https://github.com/dillibasker",
-    linkedin: "",
-    portfolio: "",
+    linkedin: "https://www.linkedin.com/in/dilli-basker-8aaa262ba",
+    portfolio: "https://port-folio-digital.vercel.app/ ",
   },
   {
     name: "Premavathy",
