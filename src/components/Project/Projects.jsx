@@ -218,7 +218,7 @@ const Projects = () => {
                   future roadmap of the AgriConnect system.
                 </p>
                 <a
-                  href="/https://drive.google.com/file/d/1AJzd1s_Qhxww33wJCYg0ujZxFAXAv2Y7/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1AJzd1s_Qhxww33wJCYg0ujZxFAXAv2Y7/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="visit-btn"
