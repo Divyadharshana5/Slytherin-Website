@@ -209,7 +209,7 @@ const Projects = () => {
               <div className="sub-project-card">
                 <h4>Project Overview (PPT)</h4>
                 <img
-                  src="agri.jpg"
+                  src="ppt.jpg.png"
                   alt="PPT Preview"
                   className="project-image"
                 />
