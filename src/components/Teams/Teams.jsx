@@ -129,7 +129,7 @@ const members = [
   {
     name: "Keerthana",
     position: "Frontend Developer",
-    image: "/.jpg",
+    image: "/keerthana.jpg",
     github: "https://github.com/keerthanaa18",
     linkedin:
       "https://www.linkedin.com/in/keerthana-keerthana-476886323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
