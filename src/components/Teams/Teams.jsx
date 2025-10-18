@@ -99,7 +99,7 @@ const members = [
     image: "/aashiq.jpg",
     github: "https://github.com/MOHAMMED-AASHIQ-124",
     linkedin: "https://www.linkedin.com/in/mohammed-aashiq-6b339b2a6/",
-    portfolio: "https://mohammed-aashiq-0727.netlify.app/ ",
+    portfolio: "https://mohammed-aashiq-0727.netlify.app/",
   },
   {
     name: "Allwyn",
@@ -115,7 +115,7 @@ const members = [
     image: "/dilli.jpg",
     github: "https://github.com/dillibasker",
     linkedin: "https://www.linkedin.com/in/dilli-basker-8aaa262ba",
-    portfolio: "https://port-folio-digital.vercel.app/ ",
+    portfolio: "https://port-folio-digital.vercel.app/",
   },
   {
     name: "Premavathy",
@@ -124,7 +124,7 @@ const members = [
     github: "https://github.com/PremavathyV",
     linkedin:
       "https://www.linkedin.com/in/premavathy-vijayan-921a39252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    portfolio: "premavathy-portfolio.vercel.app",
+    portfolio: "https://premavathy-portfolio.vercel.app",
   },
   {
     name: "Keerthana",
