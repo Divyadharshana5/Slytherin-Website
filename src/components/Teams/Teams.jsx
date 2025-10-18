@@ -106,7 +106,7 @@ const members = [
     position: "Backend Developer",
     image: "/allwyn.jpg",
     github: "https://github.com/allwyn-v",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/allwyn-v-57548b1b1/",
     portfolio: "",
   },
   {
