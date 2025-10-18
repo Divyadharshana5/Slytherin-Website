@@ -112,7 +112,7 @@ const members = [
   {
     name: "Dilli Basker",
     position: "Backend Developer",
-    image: "/.jpg",
+    image: "/dilli.jpg",
     github: "https://github.com/dillibasker",
     linkedin: "https://www.linkedin.com/in/dilli-basker-8aaa262ba",
     portfolio: "https://port-folio-digital.vercel.app/ ",
