@@ -330,30 +330,46 @@ const Teams = () => {
                 <h3 className="member-name">{member.name}</h3>
                 <p className="member-position">{member.position}</p>
                 <div className="member-socials">
-                  <a
-                    href={member.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="GitHub"
-                  >
-                    <FaGithub className="member-social-icon" />
-                  </a>
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="LinkedIn"
-                  >
-                    <FaLinkedin className="member-social-icon" />
-                  </a>
-                  <a
-                    href={member.portfolio}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Portfolio"
-                  >
-                    <i className="fas fa-globe member-social-icon"></i>
-                  </a>
+                  {member.github && (
+                    <a
+                      href={member.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="GitHub"
+                    >
+                      <FaGithub className="member-social-icon" />
+                    </a>
+                  )}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="LinkedIn"
+                    >
+                      <FaLinkedin className="member-social-icon" />
+                    </a>
+                  )}
+                  {member.portfolio && (
+                    <a
+                      href={member.portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Portfolio"
+                    >
+                      <i className="fas fa-globe member-social-icon"></i>
+                    </a>
+                  )}
+                  {member.behance && (
+                    <a
+                      href={member.behance}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Behance"
+                    >
+                      <FaBehance className="member-social-icon" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
