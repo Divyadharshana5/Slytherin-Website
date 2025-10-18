@@ -327,14 +327,14 @@ const Teams = () => {
               className="member-card"
               data-aos="fade-up"
               data-aos-delay={index * 50}
-              style={{ border: '2px solid lime', minHeight: '300px' }}
+              style={{ border: "2px solid lime", minHeight: "300px" }}
             >
               <div
                 className="member-image"
-                style={{ 
+                style={{
                   backgroundImage: `url(${member.image})`,
-                  backgroundColor: 'rgba(0, 255, 0, 0.2)',
-                  border: '1px solid yellow'
+                  backgroundColor: "rgba(0, 255, 0, 0.2)",
+                  border: "1px solid yellow",
                 }}
               ></div>
               <div className="member-info">
