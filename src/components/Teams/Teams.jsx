@@ -107,7 +107,7 @@ const members = [
     image: "/allwyn.jpg",
     github: "https://github.com/allwyn-v",
     linkedin: "https://www.linkedin.com/in/allwyn-v-57548b1b1/",
-    behance: "",
+    behance: "https://www.behance.net/allwynv",
   },
   {
     name: "Dilli Basker",
