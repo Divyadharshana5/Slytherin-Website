@@ -104,7 +104,7 @@ const members = [
   {
     name: "Allwyn",
     position: "Backend Developer",
-    image: "/.jpg",
+    image: "/allwyn.jpg",
     github: "https://github.com/allwyn-v",
     linkedin: "",
     portfolio: "",
