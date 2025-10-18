@@ -315,65 +315,73 @@ const Teams = () => {
       <div className="members-section">
         <h2 className="members-heading">Members</h2>
         <div className="members-grid">
-          {members.map((member, index) => (
-            <div
-              key={index}
-              className="member-card"
-              data-aos="fade-up"
-              data-aos-delay={index * 50}
-            >
+          {members.map((member, index) => {
+            console.log(
+              "Rendering member:",
+              member.name,
+              "Image:",
+              member.image
+            );
+            return (
               <div
-                className="member-image"
-                style={{ backgroundImage: `url(${member.image})` }}
-              ></div>
-              <div className="member-info">
-                <h3 className="member-name">{member.name}</h3>
-                <p className="member-position">{member.position}</p>
-                <div className="member-socials">
-                  {member.github && (
-                    <a
-                      href={member.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="GitHub"
-                    >
-                      <FaGithub className="member-social-icon" />
-                    </a>
-                  )}
-                  {member.linkedin && (
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="LinkedIn"
-                    >
-                      <FaLinkedin className="member-social-icon" />
-                    </a>
-                  )}
-                  {member.portfolio && (
-                    <a
-                      href={member.portfolio}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Portfolio"
-                    >
-                      <i className="fas fa-globe member-social-icon"></i>
-                    </a>
-                  )}
-                  {member.behance && (
-                    <a
-                      href={member.behance}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Behance"
-                    >
-                      <FaBehance className="member-social-icon" />
-                    </a>
-                  )}
+                key={index}
+                className="member-card"
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
+              >
+                <div
+                  className="member-image"
+                  style={{ backgroundImage: `url(${member.image})` }}
+                ></div>
+                <div className="member-info">
+                  <h3 className="member-name">{member.name}</h3>
+                  <p className="member-position">{member.position}</p>
+                  <div className="member-socials">
+                    {member.github && (
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub"
+                      >
+                        <FaGithub className="member-social-icon" />
+                      </a>
+                    )}
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn"
+                      >
+                        <FaLinkedin className="member-social-icon" />
+                      </a>
+                    )}
+                    {member.portfolio && (
+                      <a
+                        href={member.portfolio}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Portfolio"
+                      >
+                        <i className="fas fa-globe member-social-icon"></i>
+                      </a>
+                    )}
+                    {member.behance && (
+                      <a
+                        href={member.behance}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Behance"
+                      >
+                        <FaBehance className="member-social-icon" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
