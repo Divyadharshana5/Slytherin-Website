@@ -157,7 +157,7 @@ const members = [
     image: "/silambarasam.jpg",
     github: "https://github.com/ashoklap1212-code",
     linkedin:
-      "https://www.linkedin.com/in/silambarasan-m-b1046a320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+      "https://www.linkedin.com/in/silambarasan-m-b1046a320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     portfolio: "https://portfolio-eight-nu-ny076e1gsr.vercel.app/",
   },
   {
@@ -167,7 +167,7 @@ const members = [
     github: "https://github.com/shadrach-sb",
     linkedin:
       "https://www.linkedin.com/in/shadrach-s-b-033936378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    portfolio: "https://www.behance.net/shadracbenzami",
+    behance: "https://www.behance.net/shadracbenzami",
   },
 ];
 
