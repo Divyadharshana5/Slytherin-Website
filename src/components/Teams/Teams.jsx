@@ -312,8 +312,8 @@ const Teams = () => {
       </div>
 
       {/* Members Section */}
-      <div className="members-section">
-        <h2 className="members-heading">Members</h2>
+      <div className="members-section" style={{ backgroundColor: 'rgba(255, 0, 0, 0.1)', border: '2px solid red' }}>
+        <h2 className="members-heading">Members ({members.length} total)</h2>
         <div className="members-grid">
           {members.map((member, index) => (
             <div
