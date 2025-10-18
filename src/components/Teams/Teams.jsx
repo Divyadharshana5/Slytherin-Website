@@ -158,7 +158,7 @@ const members = [
     github: "https://github.com/ashoklap1212-code",
     linkedin:
       "https://www.linkedin.com/in/silambarasan-m-b1046a320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-    behance: "",
+    portfolio: "https://portfolio-eight-nu-ny076e1gsr.vercel.app/",
   },
   {
     name: "Shadrach Benzamin",
