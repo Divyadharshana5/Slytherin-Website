@@ -313,7 +313,7 @@ const Teams = () => {
 
       {/* Members Section */}
       <div className="members-section">
-        <h2 className="members-heading">Our Team Members</h2>
+        <h2 className="members-heading">Members</h2>
         <div className="members-grid">
           {members.map((member, index) => (
             <div
