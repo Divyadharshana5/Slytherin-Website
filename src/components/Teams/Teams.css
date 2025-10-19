@@ -113,9 +113,6 @@ html {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .team-card:hover {
