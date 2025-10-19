@@ -266,10 +266,7 @@ const Teams = () => {
                     <div
                       className="team-image"
                       style={{ backgroundImage: `url(${member.image})` }}
-                      onClick={() =>
-                        member.portfolio &&
-                        window.open(member.portfolio, "_blank")
-                      }
+                      onClick={() => window.open(member.portfolio, "_blank")}
                     ></div>
                     <h3 className="team-name">{member.name}</h3>
                     <p className="team-position">{member.position}</p>
