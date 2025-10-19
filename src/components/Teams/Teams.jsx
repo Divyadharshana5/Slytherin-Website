@@ -266,7 +266,7 @@ const Teams = () => {
                     <div
                       className="team-image"
                       style={{ backgroundImage: `url(${member.image})` }}
-                      onClick={() => window.open(member.portfolio, "_blank")}
+                      onClick={() => member.portfolio && window.open(member.portfolio, "_blank")}
                     ></div>
                     <h3 className="team-name">{member.name}</h3>
                     <p className="team-position">{member.position}</p>
@@ -297,12 +297,14 @@ const Teams = () => {
                         <FaLinkedin className="social-icon" />
                       </a>
                     </div>
-                    <button
-                      className="portfolio-button"
-                      onClick={() => window.open(member.portfolio, "_blank")}
-                    >
-                      View Portfolio
-                    </button>
+                    {member.portfolio && (
+                      <button
+                        className="portfolio-button"
+                        onClick={() => window.open(member.portfolio, "_blank")}
+                      >
+                        View Portfolio
+                      </button>
+                    )}
                   </div>
                 ))}
               </div>
