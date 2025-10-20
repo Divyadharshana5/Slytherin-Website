@@ -178,9 +178,9 @@ html {
 }
 
 .social-icon {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: white;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .team-socials a:hover .social-icon {
