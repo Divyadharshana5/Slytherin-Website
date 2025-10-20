@@ -272,30 +272,46 @@ const Teams = () => {
                     <p className="team-position">{member.position}</p>
                     <p className="team-description">{member.description}</p>
                     <div className="team-socials">
-                      {member.name === "Janufa Karona" ? (
-                        <a
-                          href={member.behance}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaBehance className="social-icon" />
-                        </a>
-                      ) : (
+                      {member.github && (
                         <a
                           href={member.github}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
+                          title="GitHub"
                         >
                           <FaGithub className="social-icon" />
                         </a>
                       )}
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaLinkedin className="social-icon" />
-                      </a>
+                      {member.behance && (
+                        <a
+                          href={member.behance}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Behance"
+                        >
+                          <FaBehance className="social-icon" />
+                        </a>
+                      )}
+                      {member.linkedin && (
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="LinkedIn"
+                        >
+                          <FaLinkedin className="social-icon" />
+                        </a>
+                      )}
+                      {member.portfolio && (
+                        <a
+                          href={member.portfolio}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Portfolio"
+                        >
+                          <i className="fas fa-globe social-icon"></i>
+                        </a>
+                      )}
                     </div>
                     {member.portfolio && (
                       <button
