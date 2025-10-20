@@ -156,9 +156,8 @@ html {
 .team-socials {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .team-socials a {
