@@ -183,8 +183,9 @@ html {
   transition: color 0.3s, transform 0.3s;
 }
 
-.team-socials a:hover .social-icon {
-  color: #0f172a;
+.social-icon:hover {
+  color: #34d399;
+  transform: scale(1.1);
 }
 
 .portfolio-button {
