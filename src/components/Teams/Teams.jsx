@@ -344,6 +344,9 @@ const Teams = () => {
                 className="member-image"
                 style={{
                   backgroundImage: `url(${member.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div className="member-info">
