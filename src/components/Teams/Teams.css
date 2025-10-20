@@ -156,19 +156,36 @@ html {
 .team-socials {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.team-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.team-socials a:hover {
+  background: #34d399;
+  transform: scale(1.1) rotate(5deg);
 }
 
 .social-icon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: white;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s;
 }
 
-.social-icon:hover {
-  color: #34d399;
-  transform: scale(1.1);
+.team-socials a:hover .social-icon {
+  color: #0f172a;
 }
 
 .portfolio-button {
@@ -310,6 +327,16 @@ html {
 
   .team-description {
     font-size: 0.75rem;
+  }
+
+  .team-socials {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .team-socials a {
+    width: 36px;
+    height: 36px;
   }
 
   .social-icon {
