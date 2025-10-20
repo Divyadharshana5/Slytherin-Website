@@ -347,6 +347,7 @@ const Teams = () => {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
+                  backgroundColor: "rgba(255, 255, 255, 0.05)",
                 }}
               ></div>
               <div className="member-info">
