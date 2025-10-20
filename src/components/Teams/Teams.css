@@ -329,16 +329,6 @@ html {
     font-size: 0.75rem;
   }
 
-  .team-socials {
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .team-socials a {
-    width: 36px;
-    height: 36px;
-  }
-
   .social-icon {
     font-size: 1.2rem;
   }
