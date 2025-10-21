@@ -430,7 +430,7 @@ html {
   padding: 20px;
   text-align: center;
   flex-grow: 1;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   visibility: visible !important;
