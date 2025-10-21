@@ -402,8 +402,6 @@ html {
   min-height: 380px;
   display: flex;
   flex-direction: column;
-  visibility: visible !important;
-  opacity: 1 !important;
 }
 
 .member-card:hover {
