@@ -302,16 +302,6 @@ const Teams = () => {
                           <FaLinkedin className="social-icon" />
                         </a>
                       )}
-                      {member.portfolio && (
-                        <a
-                          href={member.portfolio}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title="Portfolio"
-                        >
-                          <i className="fas fa-globe social-icon"></i>
-                        </a>
-                      )}
                     </div>
                     {member.portfolio && (
                       <button

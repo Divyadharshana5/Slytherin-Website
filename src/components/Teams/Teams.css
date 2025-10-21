@@ -173,7 +173,6 @@ html {
 }
 
 .team-socials a:hover {
-  background: #34d399;
   transform: scale(1.1) rotate(5deg);
 }
 
