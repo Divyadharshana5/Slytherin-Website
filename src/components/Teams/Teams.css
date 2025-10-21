@@ -433,7 +433,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  visibility: visible !important;
+  visibility: visible;
 }
 
 .member-name {
