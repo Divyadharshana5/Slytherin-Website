@@ -366,9 +366,6 @@ html {
   min-height: 400px;
   position: relative;
   z-index: 1;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
 }
 
 .members-heading {
@@ -459,15 +456,16 @@ html {
 }
 
 .member-socials {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   gap: 15px;
   align-items: center;
+  visibility: visible !important;
 }
 
 .member-social-icon {
   font-size: 1.3rem;
-  color: #ffffff;
+  color: #ffffff !important;
   transition: all 0.3s ease;
 }
 
