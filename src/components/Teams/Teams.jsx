@@ -330,8 +330,8 @@ const Teams = () => {
       </div>
 
       {/* Members Section */}
-      <div className="members-section">
-        <h2 className="members-heading">Members</h2>
+      <div className="members-section" style={{ display: 'block', visibility: 'visible' }}>
+        <h2 className="members-heading">Our Team Members</h2>
         <div className="members-grid">
           {members.map((member, index) => (
             <div
@@ -344,10 +344,6 @@ const Teams = () => {
                 className="member-image"
                 style={{
                   backgroundImage: `url(${member.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundColor: "rgba(255, 255, 255, 0.05)",
                 }}
               ></div>
               <div className="member-info">
