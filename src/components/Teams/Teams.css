@@ -447,8 +447,6 @@ html {
   font-size: 0.9rem;
   color: #34d399;
   margin-bottom: 15px;
-  display: block !important;
-  visibility: visible !important;
 }
 
 .member-socials {
