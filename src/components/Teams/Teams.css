@@ -441,8 +441,6 @@ html {
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 8px;
-  display: block !important;
-  visibility: visible !important;
 }
 
 .member-position {
