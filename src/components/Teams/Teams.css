@@ -400,7 +400,7 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   min-height: 380px;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   visibility: visible !important;
   opacity: 1 !important;
