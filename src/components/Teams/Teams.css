@@ -74,12 +74,12 @@ html {
 .teams-wrapper {
   flex-shrink: 0;
   display: flex;
-  align-items: flex-start; /* avoid vertical centering that can clip content */
+  align-items: flex-start;
   justify-content: center;
-  overflow-x: hidden; /* hide horizontal slide overflow */
-  overflow-y: visible; /* allow tall content to be fully visible */
+  overflow-x: hidden;
+  overflow-y: visible;
   position: relative;
-  min-height: 600px;
+  min-height: 700px; /* increased to accommodate taller cards */
   margin-bottom: 40px;
   z-index: 1;
 }
@@ -88,25 +88,29 @@ html {
   display: flex;
   transition: transform 0.6s ease-in-out;
   width: 100%;
-  overflow: hidden;
-  align-items: stretch; /* ensure slides take full available height */
+  overflow-x: hidden; /* only hide horizontal overflow */
+  overflow-y: visible; /* allow vertical content to show */
+  align-items: stretch;
 }
 
 .teams-slide {
   flex: 0 0 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* align to top instead of center */
   opacity: 1 !important;
   visibility: visible !important;
+  padding: 20px 0;
 }
 
 .teams-grid {
   display: grid;
   gap: 40px;
   justify-content: center;
-  align-items: start; /* keep content starting at top */
+  align-items: start;
   padding: 20px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .team-card {
@@ -114,7 +118,8 @@ html {
   border-radius: 16px;
   padding: 20px;
   max-width: 280px;
-  min-height: 520px; /* ensure enough room for details */
+  min-height: 580px; /* increased height to ensure all content fits */
+  height: auto;
   text-align: center;
   display: flex !important;
   flex-direction: column;
@@ -127,6 +132,7 @@ html {
   cursor: pointer;
   opacity: 1 !important;
   visibility: visible !important;
+  overflow: visible;
 }
 
 .team-card:hover {
