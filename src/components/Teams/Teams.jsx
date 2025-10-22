@@ -322,7 +322,7 @@ const Teams = () => {
       {/* Members Section */}
       <div className="members-section" style={{ display: 'block', visibility: 'visible', opacity: 1, position: 'relative', zIndex: 10 }}>
         <h2 className="members-heading">Members</h2>
-        <div className="members-grid">
+        <div className="members-grid" style={{ display: 'grid', visibility: 'visible', opacity: 1 }}>
           {members.map((member, index) => (
             <div
               key={index}
