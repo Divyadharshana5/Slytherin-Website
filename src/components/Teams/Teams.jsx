@@ -320,16 +320,28 @@ const Teams = () => {
       </div>
 
       {/* Members Section */}
-      <div className="members-section" style={{ display: 'block', visibility: 'visible', opacity: 1, position: 'relative', zIndex: 10 }}>
+      <div
+        className="members-section"
+        style={{
+          display: "block",
+          visibility: "visible",
+          opacity: 1,
+          position: "relative",
+          zIndex: 10,
+        }}
+      >
         <h2 className="members-heading">Members</h2>
-        <div className="members-grid" style={{ display: 'grid', visibility: 'visible', opacity: 1 }}>
+        <div
+          className="members-grid"
+          style={{ display: "grid", visibility: "visible", opacity: 1 }}
+        >
           {members.map((member, index) => (
             <div
               key={index}
               className="member-card"
               data-aos="fade-up"
               data-aos-delay={index * 50}
-              style={{ display: 'flex', visibility: 'visible', opacity: 1 }}
+              style={{ display: "flex", visibility: "visible", opacity: 1 }}
             >
               <div
                 className="member-image"
