@@ -20,7 +20,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/divyadharshana5",
     portfolio: "https://divyadharshana.vercel.app/",
     description:
-      "The CEO of Slytherin Company sets the overall vision and strategic direction, leading the organization toward its mission and goals. They oversee all departments, ensuring cohesive operations and long-term success.",
+      "The CEO of Slytherin Company sets the overall vision and strategic direction, leading the organization toward its mission and goals. They oversee all departments, ensuring cohesive operations and sucess.",
   },
   {
     name: "Ramya",
