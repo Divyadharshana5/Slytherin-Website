@@ -23,7 +23,8 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: #0f172a;
 }
 
@@ -86,6 +87,7 @@ html {
   display: flex;
   transition: transform 0.6s ease-in-out;
   width: 100%;
+  overflow: hidden;
 }
 
 .teams-slide {
@@ -236,6 +238,11 @@ html {
   transform: scale(1.1);
 }
 
+/* Hide arrow controls; use dots instead */
+.arrow-controls {
+  display: none !important;
+}
+
 /* Floating Background Circles */
 .floating {
   position: absolute;
@@ -357,6 +364,49 @@ html {
   touch-action: pan-y;
 }
 
+/* Hide any potential scrollbars for the team slider */
+.teams-wrapper::-webkit-scrollbar,
+.teams-container::-webkit-scrollbar {
+  display: none;
+}
+.teams-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Pagination Dots for Team Slider */
+.pagination-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 11;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dot:hover {
+  transform: scale(1.1);
+}
+
+.dot.active {
+  background: #34d399;
+  border-color: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.8);
+  transform: scale(1.15);
+}
+
 /* Members Section */
 .members-section {
   width: 100%;
@@ -389,33 +439,14 @@ html {
 }
 
 .members-grid {
-  display: flex !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 20px;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(52, 211, 153, 0.5) transparent;
+  overflow: visible;
   visibility: visible !important;
-}
-
-.members-grid::-webkit-scrollbar {
-  height: 8px;
-}
-
-.members-grid::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.members-grid::-webkit-scrollbar-thumb {
-  background: rgba(52, 211, 153, 0.5);
-  border-radius: 4px;
-}
-
-.members-grid::-webkit-scrollbar-thumb:hover {
-  background: rgba(52, 211, 153, 0.7);
 }
 
 .member-card {
