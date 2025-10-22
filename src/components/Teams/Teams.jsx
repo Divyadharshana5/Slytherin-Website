@@ -333,7 +333,7 @@ const Teams = () => {
         <h2 className="members-heading">Members</h2>
         <div
           className="members-grid"
-          style={{ display: "grid", visibility: "visible", opacity: 1 }}
+          style={{ display: "flex", visibility: "visible", opacity: 1 }}
         >
           {members.map((member, index) => (
             <div
