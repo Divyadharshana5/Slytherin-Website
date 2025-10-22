@@ -78,7 +78,7 @@ html {
   width: 100%;
   overflow-x: hidden; /* hide horizontal scroll but show vertical */
   overflow-y: visible;
-  margin-bottom: 10px; /* reduced from 40px */
+  margin-bottom: 5px; /* reduced from 40px */
   z-index: 1;
   padding: 20px 0;
 }
