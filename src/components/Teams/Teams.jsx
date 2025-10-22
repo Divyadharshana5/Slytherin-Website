@@ -376,6 +376,20 @@ const Teams = () => {
             </div>
           ))}
         </div>
+
+        {/* Pagination Dots */}
+        <div className="pagination-dots" aria-label="Team slider pagination">
+          {chunks.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              className={`dot ${i === currentIndex ? "active" : ""}`}
+              aria-label={`Go to slide ${i + 1}`}
+              aria-current={i === currentIndex ? "true" : undefined}
+              onClick={() => setCurrentIndex(i)}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Members Section */}
