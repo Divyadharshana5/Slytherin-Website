@@ -385,7 +385,6 @@ const Teams = () => {
             </div>
           ))}
         </div>
-
       </div>
 
       {/* Members Section */}
