@@ -226,14 +226,14 @@ html {
   padding: 6px 12px;
   margin-top: 8px;
   font-size: 0.85rem;
-  color: #34d399 !important;
+  color: #34d399;
   border: 1px solid #34d399;
   border-radius: 8px;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
-  opacity: 1 !important;
-  visibility: visible !important;
+  opacity: 1;
+  visibility: visible;
 }
 
 .portfolio-button:hover {
