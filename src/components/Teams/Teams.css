@@ -376,14 +376,12 @@ html {
 
 /* Pagination Dots for Team Slider */
 .pagination-dots {
-  position: absolute;
-  bottom: 16px;
-  left: 0;
-  right: 0;
+  position: static;
   display: flex;
   justify-content: center;
   gap: 10px;
-  z-index: 11;
+  margin: 16px auto 0;
+  z-index: 1;
 }
 
 .dot {
@@ -439,14 +437,19 @@ html {
 }
 
 .members-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex !important;
   gap: 30px;
-  max-width: 1400px;
-  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding: 20px;
-  overflow: visible;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
   visibility: visible !important;
+}
+
+.members-grid::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .member-card {
