@@ -74,9 +74,10 @@ html {
 .teams-wrapper {
   flex-shrink: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* avoid vertical centering that can clip content */
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden; /* hide horizontal slide overflow */
+  overflow-y: visible; /* allow tall content to be fully visible */
   position: relative;
   min-height: 600px;
   margin-bottom: 40px;
@@ -88,6 +89,7 @@ html {
   transition: transform 0.6s ease-in-out;
   width: 100%;
   overflow: hidden;
+  align-items: stretch; /* ensure slides take full available height */
 }
 
 .teams-slide {
@@ -101,7 +103,7 @@ html {
   display: grid;
   gap: 40px;
   justify-content: center;
-  align-items: center;
+  align-items: start; /* keep content starting at top */
   padding: 20px;
 }
 
@@ -110,7 +112,11 @@ html {
   border-radius: 16px;
   padding: 20px;
   max-width: 280px;
+  min-height: 520px; /* ensure enough room for details */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   box-shadow: 0 8px 32px rgba(0, 255, 100, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
