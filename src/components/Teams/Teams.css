@@ -115,7 +115,7 @@ html {
 .team-card {
   position: relative;
   border-radius: 16px;
-  padding: 20px;
+  padding: 20px !important;
   max-width: 280px;
   min-height: 580px; /* increased height to ensure all content fits */
   height: auto;
@@ -362,7 +362,7 @@ html {
 
   .team-card {
     max-width: 95%;
-    padding: 12px;
+    padding: 12px !important;
   }
 
   .team-image {
