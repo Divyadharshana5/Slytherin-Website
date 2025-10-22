@@ -73,34 +73,33 @@ html {
 
 .teams-wrapper {
   flex-shrink: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow-x: hidden;
-  overflow-y: visible;
+  display: block; /* change to block to avoid flex alignment issues */
   position: relative;
-  min-height: 700px; /* increased to accommodate taller cards */
+  width: 100%;
+  overflow-x: hidden; /* hide horizontal scroll but show vertical */
+  overflow-y: visible;
   margin-bottom: 40px;
   z-index: 1;
+  padding: 20px 0;
 }
 
 .teams-container {
   display: flex;
   transition: transform 0.6s ease-in-out;
   width: 100%;
-  overflow-x: hidden; /* only hide horizontal overflow */
-  overflow-y: visible; /* allow vertical content to show */
-  align-items: stretch;
+  position: relative;
+  min-height: 650px;
 }
 
 .teams-slide {
   flex: 0 0 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* align to top instead of center */
+  align-items: flex-start;
   opacity: 1 !important;
   visibility: visible !important;
-  padding: 20px 0;
+  padding: 20px;
+  width: 100%;
 }
 
 .teams-grid {
