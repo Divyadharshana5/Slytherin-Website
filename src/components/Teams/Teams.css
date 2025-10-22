@@ -365,6 +365,8 @@ html {
   min-height: 400px;
   position: relative;
   z-index: 1;
+  display: block !important;
+  visibility: visible !important;
 }
 
 .members-heading {
@@ -380,12 +382,13 @@ html {
 }
 
 .members-grid {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  visibility: visible !important;
 }
 
 .member-card {
@@ -399,8 +402,9 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   min-height: 380px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
+  visibility: visible !important;
 }
 
 .member-card:hover {
