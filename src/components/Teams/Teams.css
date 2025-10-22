@@ -429,6 +429,9 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   min-height: 380px;
+  min-width: 280px;
+  max-width: 280px;
+  flex-shrink: 0;
   display: flex !important;
   flex-direction: column;
   visibility: visible !important;
@@ -523,9 +526,14 @@ html {
   }
 
   .members-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     padding: 10px;
+  }
+
+  .member-card {
+    min-width: 240px;
+    max-width: 240px;
+    min-height: 350px;
   }
 
   .member-image {
