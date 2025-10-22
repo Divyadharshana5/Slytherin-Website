@@ -374,36 +374,7 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
-/* Pagination Dots for Team Slider */
-.pagination-dots {
-  position: static;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 16px auto 0;
-  z-index: 1;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-}
-
-.dot:hover {
-  transform: scale(1.1);
-}
-
-.dot.active {
-  background: #34d399;
-  border-color: #34d399;
-  box-shadow: 0 0 10px rgba(52, 211, 153, 0.8);
-  transform: scale(1.15);
-}
+/* Removed team slider dots styling to keep only existing members dots */
 
 /* Members Section */
 .members-section {
@@ -518,9 +489,11 @@ html {
 
 .member-position {
   font-size: 1rem;
-  color: #8bffcf;
-  text-shadow: 0 0 10px rgba(52, 211, 153, 0.4);
-  margin-bottom: 15px;
+  font-weight: 600;
+  color: #34d399; /* strong, accessible contrast */
+  margin-bottom: 14px;
+  text-shadow: none;
+  opacity: 1;
 }
 
 .member-socials {
@@ -528,13 +501,14 @@ html {
   justify-content: center;
   gap: 14px;
   align-items: center;
+  margin-top: 8px;
   visibility: visible !important;
 }
 
 .member-social-icon {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #ffffff !important;
-  filter: drop-shadow(0 0 6px rgba(52, 211, 153, 0.5));
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.35));
   transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
 }
 
@@ -542,10 +516,11 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.3s ease;
 }
 
