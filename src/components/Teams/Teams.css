@@ -400,7 +400,7 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 40px;
+  margin: 24px 0; /* Match spacing used by .teams-heading */
   animation: fadeInDown 1s ease-in-out;
   display: block !important;
   visibility: visible !important;
@@ -409,7 +409,7 @@ html {
 
 .members-grid {
   display: flex !important;
-  gap: 30px;
+  gap: 40px; /* Match gap used by .teams-grid */
   overflow-x: auto;
   overflow-y: hidden;
   padding: 20px;
@@ -567,7 +567,7 @@ html {
 
   .members-heading {
     font-size: 1.8rem;
-    margin-bottom: 30px;
+    margin: 16px 0; /* Match mobile spacing of .teams-heading */
   }
 
   .members-grid {
