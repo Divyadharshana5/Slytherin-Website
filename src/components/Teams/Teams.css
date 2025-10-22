@@ -29,7 +29,7 @@ html {
 
 .teams-section {
   color: white;
-  min-height: 100vh;
+  min-height: auto;
   width: 100vw;
   font-family: "Segoe UI", sans-serif;
   display: flex;
@@ -43,6 +43,7 @@ html {
     transparent 70%
   );
   box-shadow: inset 0 0 50px rgba(59, 130, 246, 0.15);
+  overflow: visible;
 }
 
 .teams-heading {
@@ -78,6 +79,7 @@ html {
   position: relative;
   min-height: 600px;
   margin-bottom: 40px;
+  z-index: 1;
 }
 
 .teams-container {
@@ -364,9 +366,11 @@ html {
   backdrop-filter: blur(5px);
   min-height: 400px;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   display: block !important;
   visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible;
 }
 
 .members-heading {
