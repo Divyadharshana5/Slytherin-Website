@@ -423,8 +423,8 @@ html {
 /* Members Section */
 .members-section {
   width: 100%;
-  padding: 60px 20px;
-  margin-top: 0px; /* minimized gap */
+  padding: 20px 20px 60px; /* reduced top padding from 60px to 20px */
+  margin-top: 0px;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(5px);
   min-height: 100px;
