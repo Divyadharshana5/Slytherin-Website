@@ -276,14 +276,7 @@ const Teams = () => {
 
   const chunks = chunkArray(teamMembers, groupSize);
 
-  // Auto-scroll the top team slider
-  useEffect(() => {
-    if (!chunks || chunks.length <= 1) return;
-    const id = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % chunks.length);
-    }, 4000);
-    return () => clearInterval(id);
-  }, [chunks.length]);
+  // Removed auto-scroll for the top team slider (manual navigation only)
 
   const scrollLeft = () => {
     setCurrentIndex((prev) => Math.max(prev - 1, 0));
