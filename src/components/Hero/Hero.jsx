@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="hero-container glass">
           <div className="hero-text">
             <h1 className="main-title fade-in delay-1">
-              Slytherin Private Limited Solutions
+              Slytherin Private Solution Limited
             </h1>
             <h2 className="subtitle fade-in delay-2">
               Innovating Digital Excellence
