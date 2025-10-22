@@ -423,7 +423,7 @@ html {
 /* Members Section */
 .members-section {
   width: 100%;
-  padding: 20px 20px 60px; /* reduced top padding from 60px to 20px */
+  padding: 0px 20px 60px; /* reduced top padding to 0px */
   margin-top: 0px;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(5px);
@@ -444,7 +444,7 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 24px 0; /* Match spacing used by .teams-heading */
+  margin: 10px 0; /* reduced from 24px to 10px */
   animation: fadeInDown 1s ease-in-out;
   display: block !important;
   visibility: visible !important;
