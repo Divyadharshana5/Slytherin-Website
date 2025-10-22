@@ -320,10 +320,7 @@ const Teams = () => {
       </div>
 
       {/* Members Section */}
-      <div
-        className="members-section"
-        style={{ display: "block", visibility: "visible" }}
-      >
+      <div className="members-section">
         <h2 className="members-heading">Members</h2>
         <div className="members-grid">
           {members.map((member, index) => (
