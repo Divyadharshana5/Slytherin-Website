@@ -210,10 +210,10 @@ html {
 
 .social-icon {
   font-size: 1.4rem;
-  color: white !important;
+  color: white;
   transition: color 0.3s, transform 0.3s;
-  opacity: 1 !important;
-  visibility: visible !important;
+  opacity: 1;
+  visibility: visible;
 }
 
 .social-icon:hover {
