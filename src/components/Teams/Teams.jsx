@@ -490,21 +490,7 @@ const Teams = () => {
           </div>
         )}
       </div>
-      {/* Team slider pagination dots placed below the Members section */}
-      {chunks.length > 1 && (
-        <div className="pagination-dots" aria-label="Team slider pagination">
-          {chunks.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              className={`dot ${i === currentIndex ? "active" : ""}`}
-              aria-label={`Go to slide ${i + 1}`}
-              aria-current={i === currentIndex ? "true" : undefined}
-              onClick={() => setCurrentIndex(i)}
-            />
-          ))}
-        </div>
-      )}
+      {/* Removed extra team slider dots (keep only existing members dots) */}
     </section>
   );
 };
