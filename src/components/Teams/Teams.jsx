@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Teams.css";
 import {
   FaGithub,
@@ -199,6 +199,10 @@ const Teams = () => {
 
   const [groupSize, setGroupSize] = useState(window.innerWidth <= 768 ? 2 : 4);
   const [currentIndex, setCurrentIndex] = useState(0);
+  // Members slider state
+  const membersGridRef = useRef(null);
+  const [membersPages, setMembersPages] = useState(1);
+  const [membersPageIndex, setMembersPageIndex] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -209,11 +213,66 @@ const Teams = () => {
       const size = window.innerWidth <= 768 ? 2 : 4;
       setGroupSize(size);
       setCurrentIndex(0);
+      // Recalculate members pages on resize
+      if (membersGridRef.current) {
+        const grid = membersGridRef.current;
+        const pages = Math.max(
+          1,
+          Math.ceil(grid.scrollWidth / grid.clientWidth)
+        );
+        setMembersPages(pages);
+        const newIndex = Math.min(membersPageIndex, pages - 1);
+        setMembersPageIndex(newIndex);
+      }
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Calculate pages for members slider on mount and when layout changes
+  useEffect(() => {
+    const calcPages = () => {
+      if (!membersGridRef.current) return;
+      const grid = membersGridRef.current;
+      const pages = Math.max(1, Math.ceil(grid.scrollWidth / grid.clientWidth));
+      setMembersPages(pages);
+    };
+    calcPages();
+    const ro = new ResizeObserver(calcPages);
+    if (membersGridRef.current) ro.observe(membersGridRef.current);
+    window.addEventListener("load", calcPages);
+    window.addEventListener("orientationchange", calcPages);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("load", calcPages);
+      window.removeEventListener("orientationchange", calcPages);
+    };
+  }, []);
+
+  // Update page index on manual scroll
+  useEffect(() => {
+    const grid = membersGridRef.current;
+    if (!grid) return;
+    const onScroll = () => {
+      const page = Math.round(grid.scrollLeft / grid.clientWidth);
+      setMembersPageIndex(Math.min(Math.max(page, 0), membersPages - 1));
+    };
+    grid.addEventListener("scroll", onScroll, { passive: true });
+    return () => grid.removeEventListener("scroll", onScroll);
+  }, [membersPages]);
+
+  // Auto-scroll members slider
+  useEffect(() => {
+    const grid = membersGridRef.current;
+    if (!grid || membersPages <= 1) return;
+    const interval = setInterval(() => {
+      const nextPage = (membersPageIndex + 1) % membersPages;
+      grid.scrollTo({ left: nextPage * grid.clientWidth, behavior: "smooth" });
+      setMembersPageIndex(nextPage);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [membersPageIndex, membersPages]);
 
   const chunks = chunkArray(teamMembers, groupSize);
 
@@ -333,6 +392,7 @@ const Teams = () => {
         <h2 className="members-heading">Members</h2>
         <div
           className="members-grid"
+          ref={membersGridRef}
           style={{ display: "flex", visibility: "visible", opacity: 1 }}
         >
           {members.map((member, index) => (
@@ -398,6 +458,28 @@ const Teams = () => {
             </div>
           ))}
         </div>
+        {membersPages > 1 && (
+          <div className="members-dots">
+            {Array.from({ length: membersPages }).map((_, i) => (
+              <button
+                key={i}
+                className={`members-dot ${
+                  i === membersPageIndex ? "active" : ""
+                }`}
+                onClick={() => {
+                  if (!membersGridRef.current) return;
+                  const grid = membersGridRef.current;
+                  grid.scrollTo({
+                    left: i * grid.clientWidth,
+                    behavior: "smooth",
+                  });
+                  setMembersPageIndex(i);
+                }}
+                aria-label={`Go to members page ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
